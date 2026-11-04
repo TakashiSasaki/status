@@ -1,11 +1,35 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Status</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="管理するウェブサイトの稼働状況をお知らせするページです。">
+<title>サイト稼働状況 | moukaeritai.work</title>
+<style>
+:root{color-scheme:light; font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#17243a;background:#f5f7fb}
+*{box-sizing:border-box}body{margin:0} .wrap{max-width:960px;margin:auto;padding:0 24px}
+header{border-bottom:1px solid #e3e9f1;background:#fff}.bar{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:750;letter-spacing:.02em}.brand span{color:#617087;font-weight:500}.label{font-size:.76rem;letter-spacing:.12em;color:#62738b;font-weight:700}
+main{padding:clamp(64px,12vw,116px) 0} .eyebrow{color:#3c64a0;font-size:.8rem;letter-spacing:.15em;font-weight:750}
+h1{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em;line-height:1.2;margin:18px 0}
+.lead{color:#58687d;line-height:1.9;max-width:620px;margin:0}
+.card{margin-top:48px;padding:clamp(24px,5vw,36px);border:1px solid #dce4ee;border-radius:16px;background:white;box-shadow:0 12px 32px #20385b0a}
+.card-top{display:flex;align-items:center;gap:12px}.dot{width:12px;height:12px;border-radius:50%;background:#a8b2c0;flex:none}
+h2{font-size:1.1rem;margin:0}.card p{color:#58687d;line-height:1.8;margin:14px 0 0}
+footer{border-top:1px solid #e3e9f1;color:#77859a;font-size:.8rem;padding:24px 0}
+</style>
 </head>
 <body>
-  <main><h1>Status</h1><p>準備中です。</p></main>
+<header><div class="wrap bar"><div class="brand">moukaeritai<span>.work</span></div><div class="label">STATUS</div></div></header>
+<main class="wrap">
+<div class="eyebrow">SERVICE STATUS</div>
+<h1>サイトの稼働状況</h1>
+<p class="lead">管理しているウェブサイトの状態をお知らせするためのページです。</p>
+<section class="card" aria-labelledby="monitor-title">
+<div class="card-top"><span class="dot" aria-hidden="true"></span><h2 id="monitor-title">監視はまだ設定されていません</h2></div>
+<p>現在、稼働状況の収集・表示を準備しています。このページにはまだ各サイトの状態や障害情報は表示されません。</p>
+</section>
+</main>
+<footer><div class="wrap">moukaeritai.work · Status</div></footer>
 </body>
 </html>
